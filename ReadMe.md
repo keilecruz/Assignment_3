@@ -35,9 +35,7 @@ mvn spring-boot:run
 
 The API will start on http://localhost:8080.
 
-## API Endpoints 
-
-## 3. API Endpoints
+## 3. API Endpoints 
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
