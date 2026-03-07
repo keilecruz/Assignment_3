@@ -3,6 +3,7 @@
 ## 1. Introduction
 
 **Character Type:** Characters from Game of Thrones, One Piece, and Marvel
+
 **Purpose:** This Spring Boot REST API allows CRUD operations on a collection of characters, including searching and categorizing them by attributes such as universe or species.  
 
 ---
