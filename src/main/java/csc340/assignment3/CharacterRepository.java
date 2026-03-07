@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CharacterRepository extends JpaRepository<Character, Long> {
 
-    // Get characters by category (example: universe)
+    // Get characters by category
     List<Character> findByUniverse(String universe);
 
     // Search characters whose name contains a substring
