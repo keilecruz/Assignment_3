@@ -69,7 +69,7 @@ The API will start on http://localhost:8080.
 ```http
 GET http://localhost:8080/characters
 ```
-
+Reponse created:
 ```http
 [
   {
@@ -97,7 +97,7 @@ GET http://localhost:8080/characters
 ```http
 GET http://localhost:8080/characters/1
 ```
-
+Reponse created:
 ```http
 {
   "characterId": 1,
@@ -115,7 +115,7 @@ GET http://localhost:8080/characters/1
 ```http
 POST http://localhost:8080/characters
 ```
-
+Reponse created:
 ```http
 {
   "name": "Bucky Barnes",
@@ -181,7 +181,7 @@ will delete Daenerys Targaryen since her character id is 1.
 ```http
 GET http://localhost:8080/characters/category/One%20Piece
 ```
-
+Reponse created:
 ```http
 [
   {
