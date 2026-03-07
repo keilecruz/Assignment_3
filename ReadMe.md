@@ -115,7 +115,6 @@ Reponse created:
 ```http
 POST http://localhost:8080/characters
 ```
-Reponse created:
 ```http
 {
   "name": "Bucky Barnes",
