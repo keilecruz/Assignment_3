@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
-@ActiveProfiles("test") // <-- uses application-test.properties
+@ActiveProfiles("test") // uses application-test.properties
 class Assignment3ApplicationTests {
 
     @Test
