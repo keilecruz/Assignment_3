@@ -50,7 +50,9 @@
 
             <h2>${character.name}</h2>
 
-            <img src="${(character.image?? && character.image?trim?has_content)?then(character.image?trim, '/photos/default.jpg')}"width="200"height="280">
+            <img src="${character.image!'/photos/default.jpg'}" width="200" height="280">
+
+            <p><b>Universe:</b> ${character.universe!"N/A"}</p>
             <p><b>Species:</b> ${character.species!"N/A"}</p>
             <p><b>Age:</b> ${character.age!"N/A"}</p>
             <p><b>Description:</b> ${character.description!"N/A"}</p>
