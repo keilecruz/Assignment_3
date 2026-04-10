@@ -367,6 +367,7 @@ nav{
 
 
 /*----------- transition for index.html (moving down the page)---------*/
+
 html{
     scroll-behavior: smooth;
 }
