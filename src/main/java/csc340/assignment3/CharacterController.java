@@ -1,5 +1,6 @@
 package csc340.assignment3;
 
+
 import java.util.List;
 
 import org.springframework.web.bind.annotation.*;
@@ -14,43 +15,44 @@ public class CharacterController {
         this.characterService = characterService;
     }
 
-    // GET /characters
+    // ===== GET ALL (API) =====
     @GetMapping
     public List<Character> getAllCharacters() {
         return characterService.getAllCharacters();
     }
 
-    // GET /characters/{id}
+    // ===== GET BY ID (API) =====
     @GetMapping("/{id}")
     public Character getCharacterById(@PathVariable Long id) {
         return characterService.getCharacterById(id);
     }
 
-    // POST /characters
-    @PostMapping
+    // ===== CREATE (API ONLY - JSON) =====
+    @PostMapping(consumes = "application/json")
     public Character createCharacter(@RequestBody Character character) {
         return characterService.createCharacter(character);
     }
 
-    // PUT /characters/{id}
+    // ===== UPDATE (API ONLY - JSON) =====
     @PutMapping("/{id}")
-    public Character updateCharacter(@PathVariable Long id, @RequestBody Character character) {
+    public Character updateCharacter(@PathVariable Long id,
+                                      @RequestBody Character character) {
         return characterService.updateCharacter(id, character);
     }
 
-    // DELETE /characters/{id}
+    // ===== DELETE =====
     @DeleteMapping("/{id}")
     public void deleteCharacter(@PathVariable Long id) {
         characterService.deleteCharacter(id);
     }
 
-    // GET /characters/category/{category}
+    // ===== FILTER BY UNIVERSE =====
     @GetMapping("/category/{universe}")
     public List<Character> getCharactersByUniverse(@PathVariable String universe) {
         return characterService.getCharactersByUniverse(universe);
     }
 
-    // GET /characters/search?name=substring
+    // ===== SEARCH =====
     @GetMapping("/search")
     public List<Character> searchCharacters(@RequestParam String name) {
         return characterService.searchCharactersByName(name);

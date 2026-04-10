@@ -1,0 +1,493 @@
+/*-------- index.html---------*/
+
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: "Fraunces", serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(/photos/thunder.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li ::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+
+}
+
+.nav-links ul li :hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    top: 10%;
+    right: 50%;
+
+    text-align: center;
+    z-index: 1;
+}
+
+.text-box h1{
+
+    font-size: 44px;
+
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    position: absolute;
+    top: 83%;
+    left: 52%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #fff;
+    
+    
+}
+
+.char-info{
+    
+    display: inline-block;    
+    margin-top: 38%;
+    margin-left: 5%;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+} 
+
+.char-info:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    transition: 1s;
+    color: black;
+}
+
+/*-----  character gallary  ------*/
+
+.gallaryhome1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+
+
+} h1{
+    font-size: 40px;
+    font-weight: 600;
+
+} p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    margin-bottom: 40px;
+} 
+
+.row1, .row2{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 40px;
+}
+
+.row1 h3, .row2 h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.SearchChar{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+} h1{
+    font-size: 40px;
+    font-weight: 600;
+
+} p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    margin-bottom: 40px;
+} 
+
+.SearchChar .search Input, .SearchChar .search select{
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+/*------ details.html -------*/
+
+.text-box2 h1{
+    position: absolute;
+    color: #fff;
+    bottom: 10%;
+    left: 50%;
+    font-size: 65px;
+    transform: translateX(-50%);
+    z-index: 1; 
+
+}
+
+.InfoChar{
+    width: 80%;
+    margin: auto;
+
+    padding-top: 100px;
+
+}
+.InfoChar h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.InfoChar1{
+    display: flex;
+    align-items: center;
+    top: 30%;
+}
+
+.InfoChar1 h1{
+    display: flex;
+    top: 20%;
+    margin-top: 5%;
+}
+
+.Infotext {
+    display: flex;
+    flex-direction: column;
+}
+
+.Infotext p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0;
+    margin: 1%;
+    margin-left: 15%;
+}
+
+
+.InforChar2{
+    display: flex;
+    align-items: center;
+    top: 20%;
+}
+
+.Infotext2 p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0;
+    margin: 1%;
+    margin-left: 10%;
+}
+
+
+
+/*-------- about.html ----------*/
+.about1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+
+} 
+.about1 h1{
+
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 5%;
+    padding: 0;
+    margin: 1%;
+    text-align: center;
+}
+
+
+.text-box3 h1{
+    position: absolute;
+    color: #fff;
+    bottom: 10%;
+    left: 50%;
+    font-size: 65px;
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+
+
+.aboutweb{
+    display: flex;
+    align-items: center;
+    top: 20%;
+}
+
+.aboutweb p{
+    color: #000000;
+    font-size: 18px;
+    margin-left: 5%;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+/*--------- new character form.html -------*/
+
+.text-box3 h1{
+    position: absolute;
+    color: #fff;
+    bottom: 10%;
+    left: 50%;
+    font-size: 65px;
+    transform: translateX(-50%);
+    z-index: 1; 
+
+}
+
+.newChar{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.newChar h1{
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.newChar{
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center; 
+    margin-top: 1%;   
+}
+
+.char-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.char-form label{
+    text-align: left;
+    font-weight: 600;
+}
+
+.char-form input, .char-form textarea{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.char-form button{
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #000000;
+    color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.char-form button:hover{
+    opacity: .85;
+}
+
+
+/*----------- transition for index.html (moving down the page)---------*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+#gallaryhome{
+    scroll-margin-top: 100px;
+}
+
+/*----- card style for character-details.ftlh--------*/
+
+.character-card {
+    width: 260px;
+    background: #ffffff; /* clean white background */
+    border: 1px solid #ddd; /* soft border */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    color: #222; /* dark readable text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.character-card:hover {
+    transform: scale(1.02);
+}
+
+/* Image */
+.character-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.character-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.character-card p {
+    font-size: 13px;
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+.card-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.character-card button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    background: #4f46e5; 
+    color: white;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.update-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-form label {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #444;
+}
+
+.update-form input,
+.update-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.update-form input:focus,
+.update-form textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 4px rgba(79, 70, 229, 0.4);
+}
+
+.btn-submit {
+    margin-top: 20px;
+    padding: 10px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: #3730a3;
+}
