@@ -3,6 +3,7 @@
 ## 1. Introduction
 
 **Character Type:** Characters from Game of Thrones, One Piece, and Marvel
+
 **Purpose:** This Spring Boot REST API allows CRUD operations on a collection of characters, including searching and categorizing them by attributes such as universe or species.  
 
 ---
@@ -34,9 +35,7 @@ mvn spring-boot:run
 
 The API will start on http://localhost:8080.
 
-## API Endpoints 
-
-## 3. API Endpoints
+## 3. API Endpoints 
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -70,7 +69,7 @@ The API will start on http://localhost:8080.
 ```http
 GET http://localhost:8080/characters
 ```
-
+Reponse created:
 ```http
 [
   {
@@ -98,7 +97,7 @@ GET http://localhost:8080/characters
 ```http
 GET http://localhost:8080/characters/1
 ```
-
+Reponse created:
 ```http
 {
   "characterId": 1,
@@ -116,7 +115,6 @@ GET http://localhost:8080/characters/1
 ```http
 POST http://localhost:8080/characters
 ```
-
 ```http
 {
   "name": "Bucky Barnes",
@@ -182,7 +180,7 @@ will delete Daenerys Targaryen since her character id is 1.
 ```http
 GET http://localhost:8080/characters/category/One%20Piece
 ```
-
+Reponse created:
 ```http
 [
   {
