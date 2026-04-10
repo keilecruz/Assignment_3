@@ -1,5 +1,4 @@
 package csc340.assignment3;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -24,6 +23,7 @@ public class Character {
   private String universe;
   private String species;
   private int age;
+  private String image;
 
   public Character() {
   }
@@ -91,6 +91,14 @@ public class Character {
 
   public void setAge(int age) {
     this.age = age;
+  }
+
+  public String getImage() {
+    return image;
+  }
+
+  public void setImage(String image) {
+    this.image = image;
   }
 
 }
