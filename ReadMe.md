@@ -214,11 +214,12 @@ GET http://localhost:8080/characters/search?name=Daen
 ]
 ```
 
-## 5. Link to Demostration Video
+## 5. Link to Demostration Video (Assignment 3)
 Watch the demonstration of the API using Echo API in VS Code:
 
 https://drive.google.com/drive/u/0/folders/1I3fFYGBlmV5o_gLzMT8KSHSKdYwzHVud
 
-## 6. Link to Demosttration Video (Assignment 4 : MVC APP)
+## 6. Link to Demostration Video (Assignment 4)
 Watch the demostration of how a full stack web application is used to store data
+
 https://www.loom.com/share/12715a91d99747ab808a54e61a73a15e
